@@ -1,0 +1,29 @@
+﻿@using WebApplication4.ViewModels
+@model TogetherVM
+
+
+
+
+<section class="mt-5">
+
+    <h1 class="text-center">
+        Specialty
+    </h1>
+    <div class="container">
+        <div class="row justify-content-center">
+
+            @foreach (var item in Model.Categories)
+            {
+                <div class="card text-bg-dark my-3">
+                    <img src="@item.Image" class="card-img" alt="..." style="object-fit:contain">
+                    <div class="card-img-overlay">
+                        <h3 class="card-title">@item.Name</h3>
+                        <p class="card-text">@item.Description</p>
+
+                    </div>
+                </div>
+            }
+
+        </div>
+    </div>
+</section>
