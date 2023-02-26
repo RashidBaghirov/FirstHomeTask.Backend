@@ -17,6 +17,14 @@ namespace WebApplication4.Controllers
             return View(together);
         }
 
+        public IActionResult Detail()
+        {
+
+            TogetherVM together = new TogetherVM();
+
+            return View(together);
+        }
+
 
     }
 }

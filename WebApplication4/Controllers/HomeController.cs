@@ -7,17 +7,10 @@ namespace WebApplication4.Controllers
     public class HomeController : Controller
     {
         public TogetherVM Together;
-
-    
         public IActionResult Index()
-        {
-
-            TogetherVM together = new TogetherVM();
-         
+        { 
+            TogetherVM together = new();
             return View(together);
         }
-
-
- 
     }
 }
